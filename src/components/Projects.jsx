@@ -18,13 +18,7 @@ const Projects = () => {
       technologies: [SiKotlin, SiJetpackcompose],
       techNames: ["Kotlin", "Jetpack Compose"],
       featured: true,
-    },
-    {
-      title: "Digital clock App",
-      description: "A digital clock application with alarm and timer features.",
-      technologies: [SiC],
-      techNames: ["C"],
-      featured: true,
+      image:"/Notes App.jpeg"
     },
     {
       title: "Inventory Management System",
@@ -32,8 +26,17 @@ const Projects = () => {
         "A comprehensive inventory management system with real-time tracking and reporting features.",
       technologies: [FaJava],
       techNames: ["Java", "Python"],
-      featured: false,
+      featured: true,
+      image:"/inventory app.png"
     },
+    {
+      title: "Digital clock App",
+      description: "A digital clock application with alarm and timer features.",
+      technologies: [SiC],
+      techNames: ["C"],
+      featured: true,
+      image:"/vite.svg"}
+    
   ];
 
   return (
@@ -93,7 +96,7 @@ const Projects = () => {
               {project.featured && (
                 <div className="lg:w-1/3 gradient-bg-card p-8 flex items-center justify-center">
                   <div className="text-center text-white">
-                    <div className="text-6xl mb-4">🚀</div>
+                    <div className="text-6xl mb-4"><img src={project.image} alt=" project image" /></div>
                     <p className="text-lg font-semibold">Featured</p>
                     <p className="text-purple-100">Student Project</p>
                   </div>
