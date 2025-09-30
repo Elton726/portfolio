@@ -35,8 +35,9 @@ const Projects = () => {
       technologies: [SiC],
       techNames: ["C"],
       featured: true,
-      image:"/vite.svg"}
-    
+      image:"/Digital_clock.png"
+    }
+
   ];
 
   return (
